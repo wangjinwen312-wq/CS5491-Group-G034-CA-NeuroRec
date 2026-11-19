@@ -1,0 +1,17 @@
+{
+  "status": "complete",
+  "elapsed_seconds": 379.3290443000151,
+  "model_seed_rows": 25,
+  "independent_fits": 30,
+  "ablation_rows": 10,
+  "seeds": [
+    11,
+    22,
+    33,
+    44,
+    55
+  ],
+  "sampled_data": false,
+  "validation": "passed",
+  "formal": true
+}

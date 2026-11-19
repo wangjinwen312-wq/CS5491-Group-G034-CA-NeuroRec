@@ -1,0 +1,7 @@
+{
+  "status": "passed",
+  "formal": true,
+  "model_seed_rows": 25,
+  "independent_fits": 30,
+  "ablation_rows": 10
+}

@@ -1,0 +1,6 @@
+﻿seed,best_epoch,baseline_best_epoch,independently_trained,max_abs_prediction_difference,max_abs_parameter_difference,max_abs_train_loss_difference,max_abs_val_rmse_difference,max_abs_metric_difference
+11,7,7,True,0.0,0.0,0.0,0.0,0.0
+22,6,6,True,0.0,0.0,0.0,0.0,0.0
+33,7,7,True,0.0,0.0,0.0,0.0,0.0
+44,6,6,True,0.0,0.0,0.0,0.0,0.0
+55,7,7,True,0.0,0.0,0.0,0.0,0.0

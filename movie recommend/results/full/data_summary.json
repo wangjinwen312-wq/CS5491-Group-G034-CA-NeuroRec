@@ -1,0 +1,93 @@
+{
+  "source_url": "https://files.grouplens.org/datasets/movielens/ml-1m.zip",
+  "source_archive_sha256": "a6898adb50b9ca05aa231689da44c217cb524e7ebd39d264c56e2832f2c54e20",
+  "split": "global_chronological",
+  "requested_train_fraction": 0.8,
+  "requested_val_fraction": 0.1,
+  "timestamp_ties": "kept in the same partition",
+  "raw_rating_rows": 1000209,
+  "invalid_rating_rows_removed": 0,
+  "duplicate_user_item_rows_removed": 0,
+  "duplicate_policy": "retain earliest timestamp for each user-item pair",
+  "clean_rating_rows": 1000209,
+  "id_mapping": "sorted original IDs; mappings and movie genres are static metadata only",
+  "n_users": 6040,
+  "n_items": 3883,
+  "n_genres_excluding_padding": 18,
+  "train_catalog_size": 3662,
+  "train_user_count": 5400,
+  "partitions": {
+    "train": {
+      "rows": 800164,
+      "users": 5400,
+      "items": 3662,
+      "min_timestamp": 956703932,
+      "max_timestamp": 975768719,
+      "min_utc": "2000-04-25T23:05:32+00:00",
+      "max_utc": "2000-12-02T14:51:59+00:00",
+      "cold_user_rows": 0,
+      "cold_item_rows": 0,
+      "warm_rows": 800164
+    },
+    "val": {
+      "rows": 100024,
+      "users": 1134,
+      "items": 3305,
+      "min_timestamp": 975768738,
+      "max_timestamp": 978133367,
+      "min_utc": "2000-12-02T14:52:18+00:00",
+      "max_utc": "2000-12-29T23:42:47+00:00",
+      "cold_user_rows": 76176,
+      "cold_item_rows": 17,
+      "warm_rows": 23844
+    },
+    "test": {
+      "rows": 100021,
+      "users": 1209,
+      "items": 3407,
+      "min_timestamp": 978133414,
+      "max_timestamp": 1046454590,
+      "min_utc": "2000-12-29T23:43:34+00:00",
+      "max_utc": "2003-02-28T17:49:50+00:00",
+      "cold_user_rows": 19326,
+      "cold_item_rows": 98,
+      "warm_rows": 80608
+    }
+  },
+  "ranking_test": {
+    "split": "test",
+    "positive_threshold": 4,
+    "catalog": "movies with at least one training interaction",
+    "catalog_size": 3662,
+    "candidate_sampling": "none: full eligible catalog",
+    "history_excluded": "train + validation",
+    "heldout_users": 1209,
+    "warm_heldout_users": 1009,
+    "evaluated_users": 992,
+    "cold_users_excluded": 200,
+    "warm_users_without_eligible_positives_excluded": 17,
+    "heldout_positive_rows": 54452,
+    "eligible_positive_rows": 43597,
+    "no_positive_users": "excluded from macro average; exclusion counts reported",
+    "relevance": "binary; observed held-out rating >= threshold; unobserved is unknown",
+    "averaging": "unweighted mean across eligible users"
+  },
+  "sparse_groups": {
+    "definition": "training count > 0 and <= 25th percentile of nonzero counts",
+    "user_count_threshold": 41.0,
+    "item_count_threshold": 26.0,
+    "sparse_user_entities": 1385,
+    "sparse_item_entities": 922,
+    "test_rating_counts": {
+      "sparse_user": 12499,
+      "sparse_item": 2412,
+      "warm": 80608,
+      "sparse_user_warm": 12490,
+      "sparse_item_warm": 2077
+    },
+    "opposite_side_cold_rows": {
+      "sparse_user": 9,
+      "sparse_item": 335
+    }
+  }
+}
